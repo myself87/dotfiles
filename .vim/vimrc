@@ -1,0 +1,30 @@
+" Use Vim settings instead of Vi settings.
+set nocompatible
+
+" Make backspace behave normal
+set backspace=indent,eol,start
+
+"Enable filetype detection and language dependent indentation
+filetype plugin indent on
+
+"Show line numbers and relative line numbers
+set number relativenumber
+
+" === Statusline Options ===
+set laststatus=2
+set statusline=
+set statusline+=\ %F
+
+" === Here be syntax related stuff ===
+" Switch syntax highlighting on
+syntax on
+
+" Show matching brackets
+set showmatch
+
+" Indentation and Tabstop
+set autoindent expandtab
+set shiftwidth=4 softtabstop=4 tabstop=4
+
+" === Search Options ===
+set hlsearch ignorecase incsearch smartcase
